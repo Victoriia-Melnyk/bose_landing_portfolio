@@ -1,0 +1,14 @@
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: content-box;
+
+  @include on-tablet {
+    padding: 0 72px;
+  }
+
+  @include on-desktop {
+    padding: 0 120px;
+  }
+}

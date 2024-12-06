@@ -1,3 +1,16 @@
-body {
-  margin: 0;
-}
+@import "normilize";
+@import "utils";
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/icon";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/top-actions";
+@import "blocks/footer";
+@import "blocks/title";
+@import "blocks/recommended";
+@import "blocks/categories";
+@import "blocks/about-us";
+@import "blocks/contacts";
+@import "blocks/form-field";

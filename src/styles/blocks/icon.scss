@@ -1,0 +1,41 @@
+.icon {
+  display: block;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--menu {
+    background-image: url(images/mobile/burger-menu.png);
+
+    &:hover {
+      background-image: url(images/mobile/burger-menu-hover.png);
+    }
+
+    @include on-tablet {
+      background-image: url(images/tablet-desktop/burger-menu.png);
+
+      &:hover {
+        background-image: url(images/tablet-desktop/burger-menu-hover.png);
+      }
+    }
+  }
+
+  &--call {
+    background-image: url(images/mobile/phone.png);
+
+    @include on-tablet {
+      background-image: url(images/tablet-desktop/phone.png);
+    }
+  }
+
+  &--cross {
+    background-image: url(images/mobile/cross.png);
+    grid-column: 3/3;
+    
+    @include on-tablet {
+      background-image: url(images/tablet-desktop/cross.png);
+    }
+  }
+
+}

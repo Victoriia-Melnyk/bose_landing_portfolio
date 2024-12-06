@@ -1,0 +1,16 @@
+.footer {
+  background-image: url(images/photos/footer-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+
+  @include on-tablet {
+    background-image: url(images/photos/footer-tablet.jpg);
+    height: 400px;
+  }
+
+  @include on-desktop {
+    background-image: url(images/photos/footer-desktop.jpg);
+    height: 460px;
+  }
+}

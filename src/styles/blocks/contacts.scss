@@ -1,0 +1,106 @@
+.contacts {
+
+  &__content {
+    @include on-tablet {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 24px;
+    }
+
+    @include on-desktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 24px;
+    }
+  }
+  
+  
+  &__form {
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__info {
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: 8 / 11;
+    }
+  }
+  &__field {
+    margin: 0 0 16px;
+
+    &--last {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 8px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $text-color-grey;
+  }
+
+  &__info-link {
+    display: block;
+    margin-bottom: 24px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $text-black-second;
+    text-decoration: none;
+
+    &:hover {
+      color: lightblue;
+    }
+  }
+
+  &__btn {
+    box-sizing: border-box;
+    display: block;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @include on-tablet {
+      margin-bottom: 0;
+    }
+
+    background-color: $text-color-black;
+    border-radius: 40px;
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #fff;
+
+    &:hover {
+      border: 3px solid $text-color-black;
+      color: $text-color-black;
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: $text-color-black;
+      color: #fff;
+    }
+
+  }
+}
